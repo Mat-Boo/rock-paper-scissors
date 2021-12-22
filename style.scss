@@ -1,0 +1,236 @@
+$mainFont:'Barlow Semi Condensed', sans-serif;
+
+// Primary
+$scissorsGradient1: hsl(39, 89%, 44%);
+$scissorsGradient2: hsl(40, 84%, 53%);
+$paperGradient1: hsl(230, 89%, 59%);
+$paperGradient2: hsl(230, 89%, 65%);
+$rockGradient1: hsl(349, 71%, 44%);
+$rockGradient2: hsl(349, 70%, 56%);
+/* $lizardGradient1: hsl(261, 73%, 60%);
+$lizardGradient2: hsl(261, 72%, 63%);
+$cyan1: hsl(189, 59%, 53%);
+$cyan2: hsl(189, 58%, 57%); */
+
+//Neutral
+$darkText: hsl(229, 25%, 31%);
+$scoreText: hsl(229, 64%, 46%);
+$headerOutline: hsl(217, 16%, 45%);
+
+// Background
+$bgRadialGradient1: hsl(214, 47%, 23%);
+$bgRadialGradient2: hsl(237, 49%, 15%);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $mainFont;
+    background: radial-gradient($bgRadialGradient1, $bgRadialGradient2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 331px;
+    padding: 20px;
+    border: white solid 2px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    border: $headerOutline 2px solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.logo {
+    width: 45%;
+}
+
+.scoreBox {
+    background: white;
+    padding: 5px 20px 3px 20px;
+    border-radius: 5px;
+}
+
+.scoreTitle {
+    color: $scoreText;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.score {
+    color: $darkText;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+// Playground 1
+.playGround1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.triangle {
+    width: 70%;
+}
+
+.playIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.playIcon {
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+    max-width: 50px;
+    width: 20%;
+}
+
+.paperScissorsBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
+.paper {
+    border: solid 11px $paperGradient2;
+    box-shadow: 0px 5px 0px $paperGradient1,
+                inset 0px 5px 0 rgb(221, 221, 221);
+    position: relative;
+    left: -30px;
+}
+
+.scissors {
+    border: solid 11px $scissorsGradient2;
+    box-shadow: 0px 5px 0 $scissorsGradient1,
+                inset 0px 5px 0 rgb(221, 221, 221);
+    position: relative;
+    right: -30px;
+}
+
+.rock {
+    border: solid 11px $rockGradient2;
+    box-shadow: 0px 5px 0 $rockGradient1,
+                inset 0px 5px 0 rgb(221, 221, 221);
+    position: relative;
+    bottom: 10px;
+}
+
+.rulesTitle {
+    border: $headerOutline 2px solid;
+    border-radius: 10px;
+    padding: 10px 50px 10px 50px;
+    color: white;
+}
+
+// Rules Page
+.rulesPage {
+    background: white;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.rulesTitle-rules {
+    margin-top: 20%;
+    color: $darkText;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.close {
+    margin-bottom: 10%;
+}
+
+// Playground 2
+.playground2 {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.youPicked, .housePicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.emptyCircle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: $bgRadialGradient2;
+}
+
+.youPicked .playIcon, .housePicked .playIcon {
+    position: static;
+}
+
+.youPickedTitle, .housePickedTitle {
+    color: white;
+    margin-top: 20px;
+}
+
+.playground2 .playIcon {
+    display: none;
+}
+
+.playground2 .youPicked .paper {
+    display: block;
+}
+
+// PlaygroundEnd
+.endGameBlock {
+    display: none;
+}
+
+.endGameMessage {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.playAgainBtn {
+    color: $darkText;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+
+
+
