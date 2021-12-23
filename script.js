@@ -1,7 +1,7 @@
 const rulesBtn = document.querySelector('.rulesTitle');
 const rulesPage = document.querySelector('.rulesPage');
 const closeRulesBtn = document.querySelector('.close');
-const playIcons = document.querySelectorAll('.playIcon');
+const playIcons = document.querySelectorAll('.playIcon1');
 const playGround1 = document.querySelector('.playGround1');
 const playGround2 = document.querySelector('.playGround2');
 const youPickedIcons = document.querySelectorAll('.youPicked .playIcon');
