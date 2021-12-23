@@ -197,7 +197,7 @@ main {
   margin-bottom: 10%;
 }
 
-.playground2 {
+.playGround2 {
   display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -241,12 +241,8 @@ main {
   margin-top: 20px;
 }
 
-.playground2 .playIcon {
+.removeIcon {
   display: none;
-}
-
-.playground2 .youPicked .paper {
-  display: block;
 }
 
 .endGameBlock {
